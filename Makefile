@@ -35,3 +35,6 @@ else
 	python3 -m pip install $(name); \
 	grep -qxF "$(name)" requirements-dev.txt || echo $(name) >> requirements-dev.txt
 endif
+
+dev:
+	python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000

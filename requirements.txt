@@ -3,3 +3,4 @@ httpx
 python-dotenv
 python-multipart
 uvicorn
+moviepy

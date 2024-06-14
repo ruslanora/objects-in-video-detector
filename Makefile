@@ -36,5 +36,15 @@ else
 	grep -qxF "$(name)" requirements-dev.txt || echo $(name) >> requirements-dev.txt
 endif
 
+build:
+	docker build -t object-detector .
+
 dev:
 	python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+run:
+	docker run -p 8000:8000 object-detector
+
+serve:
+	make build; \
+	make run

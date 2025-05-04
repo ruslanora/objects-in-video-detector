@@ -1,9 +1,9 @@
 fastapi
 httpx
-python-dotenv
-python-multipart
-uvicorn
 moviepy
 pillow
+python-dotenv
+python-multipart
 torch
 torchvision
+uvicorn

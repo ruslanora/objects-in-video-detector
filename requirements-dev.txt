@@ -1,5 +1,5 @@
 black
+pre_commit
 pylint
 pytest
 mypy
-pre_commit

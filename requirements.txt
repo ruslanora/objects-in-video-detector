@@ -1,9 +1,0 @@
-fastapi
-httpx
-moviepy
-pillow
-python-dotenv
-python-multipart
-torch
-torchvision
-uvicorn

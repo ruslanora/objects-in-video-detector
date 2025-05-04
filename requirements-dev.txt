@@ -1,5 +1,0 @@
-black
-pre_commit
-pylint
-pytest
-mypy

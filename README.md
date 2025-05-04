@@ -5,7 +5,7 @@ A proof-of-concept microservice that detects objects in video files using a pre-
 ## Requirements
 
 - Python
-- Docker (Optional)
+- Docker
 
 ## Getting Started
 
@@ -15,42 +15,13 @@ Create a `.env` file and place it in the root directory.
 
 See [.env.example](.env.example) for the list of variables.
 
-### Using Docker
+### Running using Docker
 
 `cd` to the project directory and run a docker container:
 
 ```sh
 make serve
 ```
-
-### Using venv
-
-
-`cd` to the project directory and create a virtual environment:
-
-```sh
-make venv
-```
-
-Enter the environment by running:
-
-```sh
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```sh
-make install
-```
-
-Run the server:
-
-```sh
-make dev
-```
-
-## How to Use
 
 ### Input
 

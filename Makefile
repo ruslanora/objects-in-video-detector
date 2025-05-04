@@ -20,22 +20,6 @@ hooks:
 	pre-commit install --hook-type pre-commit; \
 	pre-commit install --hook-type pre-push
 
-install:
-ifeq ($(origin name), undefined)
-	python3 -m pip install -r requirements.txt
-else
-	python3 -m pip install $(name); \
-	grep -qxF "$(name)" requirements.txt || echo $(name) >> requirements.txt
-endif
-
-install-dev:
-ifeq ($(origin name), undefined)
-	python3 -m pip install -r requirements-dev.txt
-else
-	python3 -m pip install $(name); \
-	grep -qxF "$(name)" requirements-dev.txt || echo $(name) >> requirements-dev.txt
-endif
-
 build:
 	docker build -t object-detector .
 

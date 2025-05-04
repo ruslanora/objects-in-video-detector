@@ -22,7 +22,7 @@
 [MAIN]
 
 # Files or directories to be skipped. They should be base names, not paths.
-ignore=third_party,venv,__pycache__,mypy_cache,
+ignore=third_party,venv,.venv,__pycache__,mypy_cache,
 
 # Files or directories matching the regex patterns are skipped. The regex
 # matches against base names, not paths.
